@@ -29,6 +29,44 @@
     --color-success: #10b981;
     --color-warning: #f59e0b;
     --color-error: #ef4444;
+    
+/* Checkbox container */
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+      padding-left: 28px;
+      font-size: 14px;
+      user-select: none;
+  }
+  
+  /* Hide native checkbox */
+  .checkbox-container input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+  }
+  
+  /* Custom box */
+  .checkmark {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      height: 18px;
+      width: 18px;
+      background-color: #fff;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  /* When checked: change background and border */
+  .checkbox-container input:checked ~ .checkmark {
+      background-color: #0ea5e9;
+      border-color: #0f0f0f14;
+  }  
   
     /* Spacing */
     --space-xs: 0.25rem;
