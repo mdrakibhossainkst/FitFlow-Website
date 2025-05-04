@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - FitFlow</title>
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-signup.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="assets/fitflow-logo.png" alt="FitFlow Logo">
+                </div>
+                
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="index.html#benefits" class="nav-link">Benefits</a>
+                    <a href="index.html#testimonials" class="nav-link">Testimonials</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn-login">Login</a>
+                    <a href="signup.html" class="btn btn-primary active">Sign Up</a>
+                </div>
+                
+                <div class="mobile-menu-button">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+            
+            <div class="mobile-menu">
+                <a href="index.html" class="nav-link-mobile">Home</a>
+                <a href="index.html#benefits" class="nav-link-mobile">Benefits</a>
+                <a href="index.html#testimonials" class="nav-link-mobile">Testimonials</a>
+                <a href="faq.html" class="nav-link-mobile">FAQ</a>
+                <a href="contact.html" class="nav-link-mobile">Contact</a>
+                <div class="auth-buttons-mobile">
+                    <a href="login.html" class="btn-login-mobile">Login</a>
+                    <a href="signup.html" class="btn btn-primary active">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Signup Section -->
+    <section class="signup-section">
+        <div class="signup-particles"></div>
+        <div class="container">
+            <div class="signup-container">
+                <div class="signup-card">
+                    <div class="signup-header">
+                        <div class="signup-icon">
+                            <i class='bx bx-user-plus'></i>
+                        </div>
+                        <h1>Start Your <span class="highlight">Journey</span></h1>
+                        <p class="signup-subtitle">Create your account and begin your fitness transformation</p>
+                    </div>
+                    
+                    <form class="signup-form" id="signup-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name</label>
+                                <div class="input-wrapper">
+                                    <i class='bx bx-user'></i>
+                                    <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="last-name">Last Name</label>
+                                <div class="input-wrapper">
+                                    <i class='bx bx-user'></i>
+                                    <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <div class="input-wrapper">
+                                <i class='bx bx-envelope'></i>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <div class="input-wrapper">
+                                <i class='bx bx-lock-alt'></i>
+                                <input type="password" id="password" name="password" placeholder="Create a password" required>
+                                <button type="button" class="password-toggle" aria-label="Toggle password visibility">
+                                    <i class='bx bx-hide'></i>
+                                </button>
+                            </div>
+                            <div class="password-strength">
+                                <div class="strength-meter">
+                                    <div class="strength-segment"></div>
+                                    <div class="strength-segment"></div>
+                                    <div class="strength-segment"></div>
+                                    <div class="strength-segment"></div>
+                                </div>
+                                <span class="strength-text">Password strength</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="confirm-password">Confirm Password</label>
+                            <div class="input-wrapper">
+                                <i class='bx bx-lock-alt'></i>
+                                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group terms-checkbox">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <span class="checkmark"></span>
+                                <span class="checkbox-label">I agree to the <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a></span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span>Create Account</span>
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </button>
+                    </form>
+                    
+                    <div class="signup-divider">
+                        <span>or sign up with</span>
+                    </div>
+                    
+                    <div class="social-signup">
+                        <button class="social-btn google">
+                            <i class='bx bxl-google'></i>
+                            <span>Google</span>
+                        </button>
+                        <button class="social-btn facebook">
+                            <i class='bx bxl-facebook'></i>
+                            <span>Facebook</span>
+                        </button>
+                        <button class="social-btn apple">
+                            <i class='bx bxl-apple'></i>
+                            <span>Apple</span>
+                        </button>
+                    </div>
+                    
+                    <div class="login-prompt">
+                        <p>Already have an account? <a href="login.html">Log in</a></p>
+                    </div>
+                </div>
+                
+                <div class="signup-benefits">
+                    <div class="benefits-card">
+                        <h2>Join FitFlow Today</h2>
+                        <p class="benefits-intro">Create your account and get access to:</p>
+                        
+                        <ul class="benefits-list">
+                            <li>
+                                <div class="benefit-icon">
+                                    <i class='bx bx-dumbbell'></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>Personalized Workouts</h3>
+                                    <p>Custom fitness plans tailored to your goals and fitness level</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="benefit-icon">
+                                    <i class='bx bx-time'></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>15-Minute Sessions</h3>
+                                    <p>Effective workouts designed to fit your busy schedule</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="benefit-icon">
+                                    <i class='bx bx-line-chart'></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>Progress Tracking</h3>
+                                    <p>Monitor your improvements and celebrate your achievements</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="benefit-icon">
+                                    <i class='bx bx-certification'></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>Expert Guidance</h3>
+                                    <p>Workouts designed by certified fitness professionals</p>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <div class="trial-badge">
+                            <div class="badge-icon">
+                                <i class='bx bx-calendar-check'></i>
+                            </div>
+                            <div class="badge-content">
+                                <h3>7-Day Free Trial</h3>
+                                <p>Try all premium features with no commitment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="wave-divider footer-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/fitflow-logo.png" alt="FitFlow Logo">
+                    <p>Your daily fitness companion</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Feedback</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">GDPR</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 FitFlow. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('show');
+        });
+        
+        // Password visibility toggle
+        const passwordToggles = document.querySelectorAll('.password-toggle');
+        
+        passwordToggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const passwordInput = this.previousElementSibling;
+                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordInput.setAttribute('type', type);
+                
+                // Toggle icon
+                const icon = this.querySelector('i');
+                if (type === 'password') {
+                    icon.classList.replace('bx-show', 'bx-hide');
+                } else {
+                    icon.classList.replace('bx-hide', 'bx-show');
+                }
+            });
+        });
+        
+        // Password strength meter
+        const passwordInput = document.getElementById('password');
+        const strengthMeter = document.querySelector('.strength-meter');
+        const strengthText = document.querySelector('.strength-text');
+        const strengthSegments = document.querySelectorAll('.strength-segment');
+        
+        passwordInput.addEventListener('input', function() {
+            const password = this.value;
+            let strength = 0;
+            
+            // Check password length
+            if (password.length >= 8) {
+                strength += 1;
+            }
+            
+            // Check for mixed case
+            if (password.match(/[a-z]/) && password.match(/[A-Z]/)) {
+                strength += 1;
+            }
+            
+            // Check for numbers
+            if (password.match(/\d/)) {
+                strength += 1;
+            }
+            
+            // Check for special characters
+            if (password.match(/[^a-zA-Z\d]/)) {
+                strength += 1;
+            }
+            
+            // Update strength meter
+            strengthSegments.forEach((segment, index) => {
+                if (index < strength) {
+                    segment.classList.add('active');
+                } else {
+                    segment.classList.remove('active');
+                }
+            });
+            
+            // Update strength text
+            if (password.length === 0) {
+                strengthText.textContent = 'Password strength';
+                strengthText.className = 'strength-text';
+            } else if (strength < 2) {
+                strengthText.textContent = 'Weak';
+                strengthText.className = 'strength-text weak';
+            } else if (strength < 4) {
+                strengthText.textContent = 'Medium';
+                strengthText.className = 'strength-text medium';
+            } else {
+                strengthText.textContent = 'Strong';
+                strengthText.className = 'strength-text strong';
+            }
+        });
+        
+        // Form submission
+        document.getElementById('signup-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Check if passwords match
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                return;
+            }
+            
+            // Get form values
+            const firstName = document.getElementById('first-name').value;
+            const lastName = document.getElementById('last-name').value;
+            const email = document.getElementById('email').value;
+            const termsAccepted = document.getElementById('terms').checked;
+            
+            // Here you would typically send the data to your server
+            console.log('Sign up attempt:', { firstName, lastName, email, password, termsAccepted });
+            
+            // For demo purposes, show a success message
+            alert('Account created successfully! Redirecting to your dashboard...');
+            
+            // In a real application, you would redirect to the dashboard or handle errors
+            // window.location.href = 'dashboard.html';
+        });
+        
+        // Add animation to form inputs
+        const formInputs = document.querySelectorAll('.form-group input');
+        
+        formInputs.forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.classList.add('input-focus');
+            });
+            
+            input.addEventListener('blur', function() {
+                this.parentElement.classList.remove('input-focus');
+            });
+        });
+    </script>
+</body>
+</html>
